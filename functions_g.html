@@ -74,6 +74,13 @@ $(function() {
 <li>G
 : <a class="el" href="structllvm_1_1GraphWriter_3_01vara_1_1feature_1_1FeatureModel_01_5_01_4.html#a897ea89ef9228a76f36b2e70ac27ca12">llvm::GraphWriter&lt; vara::feature::FeatureModel * &gt;</a>
 </li>
+<li>getAllConfigs()
+: <a class="el" href="classvara_1_1solver_1_1ConfigurationFactory.html#af11bae2a9f33103e880b8cf145f2bfcd">vara::solver::ConfigurationFactory</a>
+</li>
+<li>getAllValidConfigurations()
+: <a class="el" href="classvara_1_1solver_1_1Solver.html#af70ef877a8849fbf496ecf3316e12098">vara::solver::Solver</a>
+, <a class="el" href="classvara_1_1solver_1_1Z3Solver.html#acee819ded3325e0f1d0393a92bc579aa">vara::solver::Z3Solver</a>
+</li>
 <li>getCategory()
 : <a class="el" href="classvara_1_1feature_1_1FeatureSourceRange.html#ae3ebd7c83da7e151693d256d809f341c">vara::feature::FeatureSourceRange</a>
 </li>
@@ -86,11 +93,18 @@ $(function() {
 <li>getCommit()
 : <a class="el" href="classvara_1_1feature_1_1FeatureModel.html#a369a45b58b32f312d216f75201d44bdd">vara::feature::FeatureModel</a>
 </li>
+<li>getConfigIterator()
+: <a class="el" href="classvara_1_1solver_1_1ConfigurationFactory.html#a4b8305fe21f7bad04f247f940f8a99f7">vara::solver::ConfigurationFactory</a>
+</li>
+<li>getCurrentConfiguration()
+: <a class="el" href="classvara_1_1solver_1_1Solver.html#aac113fad2cc32ed062384812730548a5">vara::solver::Solver</a>
+, <a class="el" href="classvara_1_1solver_1_1Z3Solver.html#a185ca97ba5b38cd142ce2dfec72e79dc">vara::solver::Z3Solver</a>
+</li>
 <li>getEnd()
 : <a class="el" href="classvara_1_1feature_1_1FeatureSourceRange.html#a71d5b517350f4d75d55947e18ce7379f">vara::feature::FeatureSourceRange</a>
 </li>
 <li>getError()
-: <a class="el" href="classvara_1_1Result.html#a3ebd28120c5c0c27a6a24313e73ca5f5">vara::Result&lt; ErrorTy, ValueTy &gt;</a>
+: <a class="el" href="classvara_1_1Result.html#a7f463bde04ca66cd625c394d653773c9">vara::Result&lt; ErrorTy, ValueTy &gt;</a>
 </li>
 <li>getFeature()
 : <a class="el" href="classvara_1_1feature_1_1FeatureModel.html#a4c039362dc72752063f967ff17682bc1">vara::feature::FeatureModel</a>
@@ -102,6 +116,7 @@ $(function() {
 , <a class="el" href="classvara_1_1feature_1_1Feature.html#aeb5a3cb4727d7d080babb1d9e65fbde8">vara::feature::Feature</a>
 , <a class="el" href="classvara_1_1feature_1_1FeatureTreeNode.html#a43321cf1be8e33e0c8c864a4743c14a1">vara::feature::FeatureTreeNode</a>
 , <a class="el" href="classvara_1_1feature_1_1Relationship.html#a3a4b2b179feeb9c4131033a932e9d2b7">vara::feature::Relationship</a>
+, <a class="el" href="classvara_1_1feature_1_1StepFunctionToken.html#afabb61d7e3068361fb0542700d7677df">vara::feature::StepFunctionToken</a>
 </li>
 <li>getLeftOperand()
 : <a class="el" href="classvara_1_1feature_1_1BinaryConstraint.html#a0e41173409c083ffbe53972522bc04da">vara::feature::BinaryConstraint</a>
@@ -125,6 +140,17 @@ $(function() {
 : <a class="el" href="classvara_1_1feature_1_1Feature.html#aa5f399ffd6aceebe13f45dd63896d655">vara::feature::Feature</a>
 , <a class="el" href="classvara_1_1feature_1_1FeatureModel.html#a90f71393d2cd74e3904dfd5b2f220cae">vara::feature::FeatureModel</a>
 </li>
+<li>getNConfigs()
+: <a class="el" href="classvara_1_1solver_1_1ConfigurationFactory.html#ae0129a5b4550717a2648f2f2ee96aff2">vara::solver::ConfigurationFactory</a>
+</li>
+<li>getNextConfiguration()
+: <a class="el" href="classvara_1_1solver_1_1Solver.html#afbf1ad39ea8e085514dbba4482664766">vara::solver::Solver</a>
+, <a class="el" href="classvara_1_1solver_1_1Z3Solver.html#a4a9588859bd095a543edba766a2a3894">vara::solver::Z3Solver</a>
+</li>
+<li>getNumberValidConfigurations()
+: <a class="el" href="classvara_1_1solver_1_1Solver.html#abecc205f69bdfb4a70880ae6c8664563">vara::solver::Solver</a>
+, <a class="el" href="classvara_1_1solver_1_1Z3Solver.html#a77f128d8fbf083847d5fac7d0839d133">vara::solver::Z3Solver</a>
+</li>
 <li>getOperand()
 : <a class="el" href="classvara_1_1feature_1_1UnaryConstraint.html#a76137acd94c84634c70e165a96b2992c">vara::feature::UnaryConstraint</a>
 </li>
@@ -139,7 +165,7 @@ $(function() {
 : <a class="el" href="classvara_1_1feature_1_1Feature.html#a753ea2066226f1b2aa68134d9dd38e4a">vara::feature::Feature</a>
 </li>
 <li>getParentName()
-: <a class="el" href="classvara_1_1feature_1_1FeatureModelBuilder.html#a217f9a300a9fabfdc3698c839c77c44a">vara::feature::FeatureModelBuilder</a>
+: <a class="el" href="classvara_1_1feature_1_1FeatureModelBuilder.html#ac57686bf143b714cfcf61a7bed76b3e9">vara::feature::FeatureModelBuilder</a>
 </li>
 <li>getPath()
 : <a class="el" href="classvara_1_1feature_1_1FeatureModel.html#a02089a95f7044418edc5ed7ea6139d1a">vara::feature::FeatureModel</a>
@@ -155,9 +181,13 @@ $(function() {
 <li>getStart()
 : <a class="el" href="classvara_1_1feature_1_1FeatureSourceRange.html#a53ae721b320516fd2071ca776bb2f763">vara::feature::FeatureSourceRange</a>
 </li>
+<li>getStepFunction()
+: <a class="el" href="classvara_1_1feature_1_1NumericFeature.html#a00e4b50e614c258d5b5e43c7f4858199">vara::feature::NumericFeature</a>
+</li>
 <li>getValue()
-: <a class="el" href="classvara_1_1feature_1_1ConstraintToken.html#a73783705c21f240a444f16e15b1c978c">vara::feature::ConstraintToken</a>
+: <a class="el" href="classvara_1_1feature_1_1ConstraintToken.html#a4550cfb501b7b01c3a530e2b48cda469">vara::feature::ConstraintToken</a>
 , <a class="el" href="classvara_1_1feature_1_1PrimaryIntegerConstraint.html#a2a986cc2b859bb516f49837bc5496379">vara::feature::PrimaryIntegerConstraint</a>
+, <a class="el" href="classvara_1_1feature_1_1StepFunctionToken.html#a67f911a18604891a777b21ff0e22913d">vara::feature::StepFunctionToken</a>
 </li>
 <li>getValues()
 : <a class="el" href="classvara_1_1feature_1_1NumericFeature.html#a92d3483c96672430aaa773245ca1c6be">vara::feature::NumericFeature</a>
@@ -168,8 +198,14 @@ $(function() {
 <li>GraphWriter()
 : <a class="el" href="structllvm_1_1GraphWriter_3_01vara_1_1feature_1_1FeatureModel_01_5_01_4.html#a3ea8a39697ed89db56de64e8c5067de7">llvm::GraphWriter&lt; vara::feature::FeatureModel * &gt;</a>
 </li>
+<li>greater()
+: <a class="el" href="classvara_1_1feature_1_1ConstraintBuilder.html#ab1e30d06d223d3ed12aa9cab6f543e9f">vara::feature::ConstraintBuilder</a>
+</li>
 <li>GreaterConstraint()
 : <a class="el" href="classvara_1_1feature_1_1GreaterConstraint.html#a5cf5f4780ac5eecd461e3e3d1b20eab6">vara::feature::GreaterConstraint</a>
+</li>
+<li>greaterEqual()
+: <a class="el" href="classvara_1_1feature_1_1ConstraintBuilder.html#a2c4c4ba6d71c8097303ebc13631e076a">vara::feature::ConstraintBuilder</a>
 </li>
 <li>GreaterEqualConstraint()
 : <a class="el" href="classvara_1_1feature_1_1GreaterEqualConstraint.html#a09064de8bdde811ceb6759c92c23a5df">vara::feature::GreaterEqualConstraint</a>
@@ -178,7 +214,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 16 2022 13:20:44 for vara-feature by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 3 2023 07:53:37 for vara-feature by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

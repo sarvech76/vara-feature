@@ -81,10 +81,11 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="Constraint_8h_source.html">vara/Feature/Constraint.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Error_8h_source.html">vara/Feature/Error.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Feature_2Error_8h_source.html">vara/Feature/Error.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Feature_8h_source.html">vara/Feature/Feature.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Relationship_8h_source.html">vara/Feature/Relationship.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Result_8h_source.html">vara/Utils/Result.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="UniqueIterator_8h_source.html">vara/Utils/UniqueIterator.h</a>&quot;</code><br />
 <code>#include &quot;llvm/ADT/SmallSet.h&quot;</code><br />
 <code>#include &quot;llvm/ADT/StringMap.h&quot;</code><br />
 <code>#include &quot;llvm/Support/GraphWriter.h&quot;</code><br />
@@ -97,46 +98,51 @@ Include dependency graph for FeatureModel.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="FeatureModel_8h__incl.png" border="0" usemap="#include_2vara_2Feature_2FeatureModel_8h" alt=""/></div>
 <map name="include_2vara_2Feature_2FeatureModel_8h" id="include_2vara_2Feature_2FeatureModel_8h">
-<area shape="rect" title=" " alt="" coords="1843,5,1997,47"/>
-<area shape="rect" href="Constraint_8h.html" title=" " alt="" coords="651,177,837,203"/>
-<area shape="rect" title=" " alt="" coords="1419,348,1479,375"/>
-<area shape="rect" href="Error_8h.html" title=" " alt="" coords="369,95,519,121"/>
-<area shape="rect" href="Result_8h.html" title=" " alt="" coords="427,177,570,203"/>
-<area shape="rect" href="Feature_8h.html" title=" " alt="" coords="1363,95,1533,121"/>
-<area shape="rect" title=" " alt="" coords="2699,266,2855,293"/>
-<area shape="rect" href="Relationship_8h.html" title=" " alt="" coords="1750,95,1951,121"/>
-<area shape="rect" title=" " alt="" coords="2027,95,2191,121"/>
-<area shape="rect" title=" " alt="" coords="2215,95,2414,121"/>
-<area shape="rect" title=" " alt="" coords="2437,95,2523,121"/>
-<area shape="rect" title=" " alt="" coords="2547,95,2621,121"/>
-<area shape="rect" title=" " alt="" coords="2646,95,2709,121"/>
-<area shape="rect" title=" " alt="" coords="1304,266,1461,293"/>
-<area shape="rect" title=" " alt="" coords="1077,348,1296,375"/>
-<area shape="rect" title=" " alt="" coords="315,348,384,375"/>
-<area shape="rect" title=" " alt="" coords="523,266,600,293"/>
-<area shape="rect" title=" " alt="" coords="675,348,749,375"/>
-<area shape="rect" title=" " alt="" coords="799,348,857,375"/>
-<area shape="rect" title=" " alt="" coords="929,266,997,293"/>
-<area shape="rect" href="VariantUtil_8h.html" title=" " alt="" coords="5,266,176,293"/>
-<area shape="rect" title=" " alt="" coords="1073,266,1279,293"/>
-<area shape="rect" title=" " alt="" coords="251,266,331,293"/>
-<area shape="rect" title=" " alt="" coords="355,266,447,293"/>
-<area shape="rect" title=" " alt="" coords="61,348,120,375"/>
-<area shape="rect" href="FeatureSourceRange_8h.html" title=" " alt="" coords="2014,259,2215,300"/>
-<area shape="rect" href="FeatureTreeNode_8h.html" title=" " alt="" coords="1989,169,2173,211"/>
-<area shape="rect" title=" " alt="" coords="2321,266,2511,293"/>
-<area shape="rect" title=" " alt="" coords="2536,266,2675,293"/>
-<area shape="rect" title=" " alt="" coords="1536,266,1656,293"/>
-<area shape="rect" title=" " alt="" coords="1680,266,1723,293"/>
-<area shape="rect" title=" " alt="" coords="2239,266,2297,293"/>
-<area shape="rect" title=" " alt="" coords="1368,177,1528,203"/>
-<area shape="rect" title=" " alt="" coords="1553,177,1711,203"/>
-<area shape="rect" title=" " alt="" coords="2309,348,2441,375"/>
-<area shape="rect" title=" " alt="" coords="1653,348,1806,375"/>
-<area shape="rect" title=" " alt="" coords="1830,348,1999,375"/>
-<area shape="rect" title=" " alt="" coords="2024,348,2205,375"/>
-<area shape="rect" title=" " alt="" coords="2230,348,2285,375"/>
-<area shape="rect" title=" " alt="" coords="1797,266,1989,293"/>
+<area shape="rect" title=" " alt="" coords="1911,5,2065,47"/>
+<area shape="rect" href="Constraint_8h.html" title=" " alt="" coords="759,177,945,203"/>
+<area shape="rect" title=" " alt="" coords="1902,348,1962,375"/>
+<area shape="rect" href="Feature_2Error_8h.html" title=" " alt="" coords="470,95,621,121"/>
+<area shape="rect" href="Result_8h.html" title=" " alt="" coords="326,177,469,203"/>
+<area shape="rect" href="Feature_8h.html" title=" " alt="" coords="1903,95,2073,121"/>
+<area shape="rect" title=" " alt="" coords="2151,266,2307,293"/>
+<area shape="rect" href="Relationship_8h.html" title=" " alt="" coords="2097,95,2298,121"/>
+<area shape="rect" href="UniqueIterator_8h.html" title=" " alt="" coords="5,177,200,203"/>
+<area shape="rect" title=" " alt="" coords="2322,95,2486,121"/>
+<area shape="rect" title=" " alt="" coords="2510,95,2709,121"/>
+<area shape="rect" title=" " alt="" coords="2732,95,2817,121"/>
+<area shape="rect" title=" " alt="" coords="2841,95,2916,121"/>
+<area shape="rect" title=" " alt="" coords="2941,95,3003,121"/>
+<area shape="rect" title=" " alt="" coords="1969,266,2127,293"/>
+<area shape="rect" title=" " alt="" coords="748,348,967,375"/>
+<area shape="rect" title=" " alt="" coords="417,348,487,375"/>
+<area shape="rect" title=" " alt="" coords="885,266,963,293"/>
+<area shape="rect" title=" " alt="" coords="567,348,641,375"/>
+<area shape="rect" title=" " alt="" coords="665,348,724,375"/>
+<area shape="rect" title=" " alt="" coords="793,266,861,293"/>
+<area shape="rect" href="VariantUtil_8h.html" title=" " alt="" coords="189,266,360,293"/>
+<area shape="rect" title=" " alt="" coords="1687,266,1894,293"/>
+<area shape="rect" title=" " alt="" coords="435,266,515,293"/>
+<area shape="rect" title=" " alt="" coords="73,266,165,293"/>
+<area shape="rect" title=" " alt="" coords="245,348,304,375"/>
+<area shape="rect" href="FeatureSourceRange_8h.html" title=" " alt="" coords="1038,259,1239,300"/>
+<area shape="rect" href="FeatureTreeNode_8h.html" title=" " alt="" coords="2076,169,2260,211"/>
+<area shape="rect" title=" " alt="" coords="2599,266,2790,293"/>
+<area shape="rect" title=" " alt="" coords="2815,266,2953,293"/>
+<area shape="rect" title=" " alt="" coords="2977,266,3097,293"/>
+<area shape="rect" title=" " alt="" coords="3121,266,3164,293"/>
+<area shape="rect" title=" " alt="" coords="3189,266,3246,293"/>
+<area shape="rect" href="StepFunction_8h.html" title=" " alt="" coords="1233,177,1437,203"/>
+<area shape="rect" title=" " alt="" coords="2721,177,2881,203"/>
+<area shape="rect" title=" " alt="" coords="2538,177,2697,203"/>
+<area shape="rect" title=" " alt="" coords="991,348,1123,375"/>
+<area shape="rect" title=" " alt="" coords="1147,348,1301,375"/>
+<area shape="rect" title=" " alt="" coords="1325,348,1494,375"/>
+<area shape="rect" title=" " alt="" coords="1519,348,1700,375"/>
+<area shape="rect" title=" " alt="" coords="1724,348,1799,375"/>
+<area shape="rect" title=" " alt="" coords="1823,348,1878,375"/>
+<area shape="rect" title=" " alt="" coords="2332,266,2524,293"/>
+<area shape="rect" title=" " alt="" coords="1401,266,1612,293"/>
+<area shape="rect" title=" " alt="" coords="1315,266,1378,293"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -144,16 +150,26 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="FeatureModel_8h__dep__incl.png" border="0" usemap="#include_2vara_2Feature_2FeatureModel_8hdep" alt=""/></div>
 <map name="include_2vara_2Feature_2FeatureModel_8hdep" id="include_2vara_2Feature_2FeatureModel_8hdep">
-<area shape="rect" title=" " alt="" coords="476,5,631,47"/>
-<area shape="rect" href="FeatureModelBuilder_8h.html" title=" " alt="" coords="135,184,307,225"/>
-<area shape="rect" href="FeatureModel_8cpp.html" title=" " alt="" coords="321,370,532,397"/>
-<area shape="rect" href="FeatureModelTransaction_8h.html" title=" " alt="" coords="314,95,515,136"/>
-<area shape="rect" href="FeatureModelWriter_8h.html" title=" " alt="" coords="642,95,809,136"/>
-<area shape="rect" href="FeatureModelWriter_8cpp.html" title=" " alt="" coords="612,184,796,225"/>
-<area shape="rect" href="FeatureModelParser_8h.html" title=" " alt="" coords="14,273,181,315"/>
-<area shape="rect" href="FeatureModelBuilder_8cpp.html" title=" " alt="" coords="205,273,389,315"/>
-<area shape="rect" href="FeatureModelParser_8cpp.html" title=" " alt="" coords="5,363,189,404"/>
-<area shape="rect" href="FeatureModelTransaction_8cpp.html" title=" " alt="" coords="332,184,516,225"/>
+<area shape="rect" title=" " alt="" coords="876,5,1031,47"/>
+<area shape="rect" href="FeatureModelBuilder_8h.html" title=" " alt="" coords="339,184,511,225"/>
+<area shape="rect" href="FeatureModel_8cpp.html" title=" " alt="" coords="5,370,216,397"/>
+<area shape="rect" href="SolverFactory_8h.html" title=" " alt="" coords="744,273,891,315"/>
+<area shape="rect" href="ConfigurationFactory_8h.html" title=" " alt="" coords="867,363,1037,404"/>
+<area shape="rect" href="FeatureModelTransaction_8h.html" title=" " alt="" coords="527,95,729,136"/>
+<area shape="rect" href="FeatureModelWriter_8h.html" title=" " alt="" coords="1067,95,1234,136"/>
+<area shape="rect" href="FeatureModelWriter_8cpp.html" title=" " alt="" coords="1016,184,1200,225"/>
+<area shape="rect" href="SampleSetParser_8h.html" title=" " alt="" coords="1259,95,1426,136"/>
+<area shape="rect" href="SampleSetWriter_8h.html" title=" " alt="" coords="1489,95,1655,136"/>
+<area shape="rect" href="Solver_8h.html" title=" " alt="" coords="744,184,891,225"/>
+<area shape="rect" href="FeatureModelParser_8h.html" title=" " alt="" coords="174,273,341,315"/>
+<area shape="rect" href="FeatureModelBuilder_8cpp.html" title=" " alt="" coords="365,273,549,315"/>
+<area shape="rect" href="FeatureModelParser_8cpp.html" title=" " alt="" coords="240,363,424,404"/>
+<area shape="rect" href="SolverFactory_8cpp.html" title=" " alt="" coords="643,370,843,397"/>
+<area shape="rect" href="FeatureModelTransaction_8cpp.html" title=" " alt="" coords="536,184,720,225"/>
+<area shape="rect" href="SampleSetParser_8cpp.html" title=" " alt="" coords="1224,191,1467,218"/>
+<area shape="rect" href="SampleSetWriter_8cpp.html" title=" " alt="" coords="1491,191,1733,218"/>
+<area shape="rect" href="Z3Solver_8h.html" title=" " alt="" coords="573,273,720,315"/>
+<area shape="rect" href="Z3Solver_8cpp.html" title=" " alt="" coords="448,370,619,397"/>
 </map>
 </div>
 </div>
@@ -167,6 +183,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvara_1_1feature_1_1FeatureModel_1_1DFSIterator.html">vara::feature::FeatureModel::DFSIterator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvara_1_1feature_1_1FeatureModel_1_1FeatureMapIterator.html">vara::feature::FeatureModel::FeatureMapIterator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvara_1_1feature_1_1FeatureModel_1_1BooleanConstraint.html">vara::feature::FeatureModel::BooleanConstraint</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvara_1_1feature_1_1FeatureModel_1_1NonBooleanConstraint.html">vara::feature::FeatureModel::NonBooleanConstraint</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvara_1_1feature_1_1FeatureModel_1_1MixedConstraint.html">vara::feature::FeatureModel::MixedConstraint</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structllvm_1_1GraphWriter_3_01vara_1_1feature_1_1FeatureModel_01_5_01_4.html">llvm::GraphWriter&lt; vara::feature::FeatureModel * &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,7 +222,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 16 2022 13:20:43 for vara-feature by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 3 2023 07:53:37 for vara-feature by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
